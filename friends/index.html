@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh" class="container h-100">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>友链</title>
+  <meta name="keywords" content="V2rayN下载, V2rayn, v2ray">
+  <link href="../css/cover.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link rel="stylesheet" href="../bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="../bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="../bootstrap-5.1.3-dist/js/popper.min.js"></script>
+  <script src="../mdui-v1.0.1/js/mdui.min.js"></script>
+  <link rel="stylesheet" href="../mdui-v1.0.1/css/mdui.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="d-flex h-100 text-white bg-dark">
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+    var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+      return new bootstrap.Popover(popoverTriggerEl)
+    })
+  </script>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Brins Studio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link" aria-current="page" href="../">主页</a>
+          <a class="nav-link" href="../serverce.html">服务</a>
+          <a class="nav-link" href="../contect">联系我们</a>
+          <a class="nav-link active" href="#">友链</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mdui-center cmdui-col-xs-3 cmdui-color-blue-grey-800" style="border-radius:5px;">
+      <h1 class="mdui-text-center mdui-text-color-light-blue-400">友<span
+          class="mdui-text-color-light-blue-a700">链</span></h1>
+    </div>
+    <br>
+    <div class="mdui-container">
+      <div class="mdui-row">
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+          <div class="mdui-card mdui-hoverable" style="border-radius:16px;">
+            <div class="mdui-card-media">
+              <img src="../img/card.jpg" />
+              <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
+                <div class="mdui-card-primary">
+                  <div class="mdui-card-primary-title">ZeroSence</div>
+                  <div class="mdui-card-primary-subtitle">本人的另一个服务qwq</div>
+                </div>
+              </div>
+            </div>
+            <div class="mdui-card-actions mdui-typo">
+              <!--<button class="mdui-btn mdui-ripple">-->
+              <dev class="mdui-chip">
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">face</i></span>
+                <a class="mdui-chip-title" href="https://zerosence.brins.top">ZeroSence</a>
+              </dev>
+              <!--</button>-->
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col-sm-6 mdui-col-md-6">
+          <div class="mdui-card mdui-hoverable" style="border-radius:16px;">
+            <div class="mdui-card-media">
+              <img src="../img/card.jpg" />
+              <div class="mdui-card-media-covered mdui-card-media-covered-transparent">
+                <div class="mdui-card-primary">
+                  <div class="mdui-card-primary-title">DZIMC</div>
+                  <div class="mdui-card-primary-subtitle">一个mc生电服务器</div>
+                </div>
+              </div>
+            </div>
+            <div class="mdui-card-actions mdui-typo">
+              <!--<button class="mdui-btn mdui-ripple">-->
+              <dev class="mdui-chip">
+                <span class="mdui-chip-icon mdui-color-blue"><i class="mdui-icon material-icons">face</i></span>
+                <a class="mdui-chip-title">服务器IP:mc.dzimc.ltd</a>
+              </dev>
+              <!--</button>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  test
+</button>
+-->
+
+    <!-- 模态框 -->
+    <div class="fade modal" id="myModal">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+
+          <!-- 模态框头部
+      <div class="modal-header">
+        <h4 class="modal-title text-danger">错误</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      -->
+
+          <!-- 模态框内容 -->
+          <div class="text-danger text-start alert alert-danger alert-dismissible show">
+            <button type="button" class="btn-sm btn-close" data-bs-dismiss="modal"></button>
+            <strong>Error！</strong>因Gitee的文件检查目前无法使用此线路下载
+          </div>
+
+          <!-- 模态框底部 
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">关闭</button>
+      </div>
+      -->
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="mt-auto text-white-50 text-center">
+      <p>©2022 <a href="#" class="badge text-white bg-primary">Brins </a>All Rights Resaved, by <a
+          href="https://github.com/xx_bertant_xx/" class="text-white badge bg-primary">@Ber_tant</a>.</p>
+    </footer>
+  </div>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>

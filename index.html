@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh" class="container h-100">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>V2rayN下载</title>
+  <meta name="keywords" content="V2rayN下载, V2rayn, v2ray">
+  <link href="./css/cover.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+  <!-- 新 Bootstrap5 核心 CSS 文件 -->
+  <link rel="stylesheet" href="./bootstrap-5.1.3-dist/css/bootstrap.min.css">
+  <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+  <script src="./bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+  <script src="./bootstrap-5.1.3-dist/js/popper.min.js"></script>
+  <script src="./mdui-v1.0.1/js/mdui.min.js"></script>
+  <link rel="stylesheet" href="./mdui-v1.0.1/css/mdui.min.css" />
+  <!--[if lt IE 9]>
+  <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body id="no-agree-elua dialog open" class="d-flex h-100 text-white bg-dark" nomdui-dialog="{target: '#elua'}">
+  <script>
+    var inst = new mdui.Dialog('#dialog');
+
+    // method
+    document.getElementById('open').addEventListener('click', function () {
+      inst.open();
+    });
+
+
+    // event
+    var dialog = document.getElementById('dialog');
+
+    dialog.addEventListener('open.mdui.dialog', function () {
+      console.log('open');
+    });
+
+    dialog.addEventListener('opened.mdui.dialog', function () {
+      console.log('opened');
+    });
+
+    dialog.addEventListener('close.mdui.dialog', function () {
+      console.log('close');
+    });
+
+    dialog.addEventListener('closed.mdui.dialog', function () {
+      console.log('closed');
+    });
+
+    dialog.addEventListener('cancel.mdui.dialog', function () {
+      console.log('cancel');
+      var element = document.getElementById("no-agree-elua");
+      element.innerHTML = "您拒绝了协议";
+    });
+
+    dialog.addEventListener('confirm.mdui.dialog', function () {
+      console.log('confirm');
+    });
+  </script>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div>
+        <h3 class="float-md-start mb-0">Brins Studio</h3>
+        <nav class="nav nav-masthead justify-content-center float-md-end">
+          <a class="nav-link active" aria-current="page" href="#">主页</a>
+          <a class="nav-link" href="./serverce.html">服务</a>
+          <a class="nav-link" href="./contect">联系我们</a>
+          <a class="nav-link" href="./friends">友链</a>
+        </nav>
+      </div>
+    </header>
+    <div class="mdui-dialog" id="dialog" style="border-radius:8px;">
+      <div class="mdui-dialog-title"><span
+          class="border-5 border-start rounded-2 border-primary bg-light p-2 mb-2 text-black"><strong>协议 </strong>
+        </span></div>
+      <div class="mdui-dialog-content"><strong id="no-agree-elua"
+          class="text-center text-danger">本站不提供任何梯子服务，也不提供任何教程，所有工具仅可用于学习和交流!请不要用于违法用途!不同意请离开!违者自负</strong></div>
+      <div class="mdui-dialog-actions">
+        <botton class="mdui-btn mdui-ripple bg-danger mdui-hoverable text-white mdui-ripple" style="border-radius:50px"
+          mdui-dialog-close href="bing.com"><strong>离开</strong></botton>
+        <button class="mdui-btn mdui-ripple mdui-ripple bg-primary mdui-hoverable text-white" style="border-radius:50px"
+          mdui-dialog-confirm><strong>同意</strong></button>
+      </div>
+    </div>
+    <main class="px-3 text-center">
+      <div class="text-start alert alert-danger alert-dismissible fade show">
+        <button type="button" class="btn-sm btn-close" data-bs-dismiss="alert"></button>
+        <strong>本站不提供任何梯子服务，也不提供任何教程，所有工具仅可用于学习和交流!请不要用于<span>违法</span>用途!</strong><strong>不同意请离开!违者自负</strong>
+      </div>
+      <h1 class="mdui-typo-display-2"><span class="mdui-text-color-blue-400">V2rayN</span><span
+          class="mdui-text-color-cyan-accent">下载</span></h1>
+      <p class="lead">
+        <!--br--><span
+          class="border-5 border-start rounded-2 border-primary bg-light p-2 mb-2 text-black">本站提供最新版V2rayN的各种下载链接</span>
+        <br>
+        <br>
+      </p>
+      <p class="lead">
+        <a href="https://hub.fastgit.xyz/2dust/v2rayN/releases/download/5.16/v2rayN-Core.zip"
+          class="btn btn-primary fw-bold">国内FASTGIT高速下载</a>
+        <a href="https://github.com/2dust/v2rayN/releases/download/5.16/v2rayN-Core.zip"
+          class="btn btn-warning fw-bold border-white m-r-2 bg-white text-black-80">GITHUB官方下载</a>
+        <a href="https://gitee.com/Ber_tant/V2rayN-Release/attach_files/1049960/download/v2rayN-Core.zip"
+          class="btn btn-primary fw-bold">国内GITEE镜像下载</a>
+        <br>
+        <br>
+        <a href="./more" class="btn btn-info fw-bold">|---更多下载---|</a>
+      </p>
+      <!--<button class="mdui-btn button-a fw-blod" style="vertical-align:middle"><span>LOOK THIS </span></button>-->
+
+      <!--
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  test
+</button>
+-->
+      <!-- 模态框 -->
+      <div class="fade modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <!-- 模态框内容 -->
+            <div class="text-danger text-start alert alert-danger alert-dismissible show">
+              <button type="button" class="btn-sm btn-close" data-bs-dismiss="modal"></button>
+              <strong>Error！</strong>因Gitee的文件检查目前无法使用此线路下载
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mt-auto text-white-50 text-center">
+      <p>©2022 <a href="#" class="badge text-white bg-primary">Brins </a>All Rights Resaved, by <a
+          href="https://github.com/xx_bertant_xx/" class="text-white badge bg-primary">@Ber_tant</a>.</p>
+    </footer>
+  </div>
+  <script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    })
+  </script>
+</body>
+
+</html>
